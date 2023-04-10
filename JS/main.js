@@ -7,4 +7,5 @@ const consultaCep = fetch("https://viacep.com.br/ws/01001000/json/")
       console.log(resposta);
     }
   })
-  .catch((erro) => console.log(erro));
+  .catch((erro) => console.log(erro))
+  .finally((mensagem) => console.log("Processaento concluído!"));
